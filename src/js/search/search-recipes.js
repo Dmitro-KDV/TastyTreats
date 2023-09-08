@@ -28,7 +28,7 @@ export function getRecipes() {
             category: category || categoriy,
             title: inputForm.value,
             page: currentPage,
-            limit: 6,
+            limit: 9,
             area: selectAreaSpan.textContent !== 'Select' ? selectAreaSpan.textContent : '',
             ingredient: selectIngredientsSpan.textContent !== 'Select' ? selectIngredientsSpan.id : '',
             time: selectTimeSpan.textContent !== 'Select' ? selectTimeSpan.id : '',
