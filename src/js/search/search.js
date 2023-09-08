@@ -93,7 +93,6 @@ async function choiceIngredients() {
   await optionsIngredients.forEach((option) => {
       option.addEventListener('click', (e) => {
     
-        // console.log(e.target.id)
           optionsIngredients.forEach((option) => {option.classList.remove('selected')});
           selectIngredients.querySelector('.span').innerHTML = option.innerHTML;
           selectIngredients.querySelector('.span').id = e.target.id;
