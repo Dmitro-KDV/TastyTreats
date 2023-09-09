@@ -36,9 +36,9 @@ export function getRecipes() {
     }
     )
     .then((response) => {
-        if (response.statusText!=='OK') {
-            throw new Error(response.status);
-        }
+        // if (response.statusText!=='OK') {
+        //     throw new Error(response.status);
+        // }
         const recipes = response.data.results;
 
         if (recipes.length > 0) {
