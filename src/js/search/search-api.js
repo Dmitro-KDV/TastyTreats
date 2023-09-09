@@ -47,9 +47,9 @@ export async function getArea() {
 export async function getIngredients() {
     await axios.get(url_ingredients)
     .then((response) => {
-        if (response.statusText!=='OK') {
-            throw new Error(response.status);
-        }
+        // if (response.statusText!=='OK') {
+        //     throw new Error(response.status);
+        // }
         let ingredients = [];
         for (let i = 0; i < response.data.length; i++) {
             ingredients.push({name: response.data[i].name,
