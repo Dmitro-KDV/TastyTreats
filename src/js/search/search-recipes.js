@@ -39,7 +39,7 @@ export function getRecipes() {
         if (response.statusText!=='OK') {
             throw new Error(response.status);
         }
-        recipes = response.data.results;
+        const recipes = response.data.results;
 
         if (recipes.length > 0) {
             createMarkup(recipes);
