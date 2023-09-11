@@ -30,7 +30,7 @@ const optionListIngredients = document.querySelector('.option-list-ingredients')
 const selectIngredientsSpan = selectIngredients.querySelector('.span');
 
 let optionsTime = '';
-
+let currentPage = 1;
 
 selectTime.addEventListener('click', () =>{
   optionListTime.classList.toggle('active');
